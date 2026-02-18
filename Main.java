@@ -15,7 +15,7 @@ public class main {
 		while(true) {
 		Scanner input = new Scanner(System.in);
 		System.out.println("Pick which sorting algorithm to use");
-		System.out.println("1) Cocktail Shaker Sort \n2) Sort Algorithm 2 \n3) Exit");
+		System.out.println("1)Blind Mice \n2) Sort Algorithm 2 \n3) Exit");
 		int choice = input.nextInt();
 		switch(choice) {
 		case 1:
@@ -70,7 +70,7 @@ public class main {
 			}
 		
 	}
-	
+	//NOT a cocktail
 	public static void CockShakeSort(Scanner input) {
 		boolean retry = true;
 		while (retry) {
@@ -388,3 +388,4 @@ public class main {
 			System.out.println("\n");
 	}
 }
+
