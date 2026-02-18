@@ -2,7 +2,7 @@ import java.awt.List;
 import java.util.Random;
 import java.util.Scanner;
 
-public class Main {
+public class main {
 
 	public static boolean S1 = true;
 	public static boolean Running = false;
@@ -11,7 +11,7 @@ public class Main {
 	public static long Stop;
 	
 	
-	public static void main(String[] args) {
+	public static void Main(String[] args) {
 		while(true) {
 		Scanner input = new Scanner(System.in);
 		System.out.println("Pick which sorting algorithm to use");
@@ -171,6 +171,7 @@ public class Main {
 				
 				//sorter
 				stopwatchStart();
+					Swap = true;
 				while(Swap) {
 					Swap = false;
 				for(int i = 0; i <= tMax; i++) {
@@ -264,7 +265,7 @@ public class Main {
 				System.out.println("Number of loops: " + tMax);
 				System.out.println("====Final Sorted List of " + list1.length +" elements ====");
 				System.out.print("-->");
-				for(int k = 0; k < list1.length-1; k++) {
+				for(int k = 0; k < list1.length; k++) {
 					System.out.printf("%-10s", list1[k]);
 					if((k+1) % 10 == 0) {
 						System.out.println("-->");
@@ -283,6 +284,7 @@ public class Main {
 			
 			//sorter
 			stopwatchStart();
+				Swap = true;
 			while(Swap) {
 				Swap = false;
 			for(int i = 0; i <= tMax; i++) {
@@ -376,7 +378,7 @@ public class Main {
 			System.out.println("Number of loops: " + tMax);
 			System.out.println("====Final Sorted List of " + list1.length +" elements ====");
 			System.out.print("-->");
-			for(int k = 0; k < list1.length-1; k++) {
+			for(int k = 0; k < list1.length; k++) {
 				System.out.printf("%-10s", list1[k]);
 				if((k+1) % 10 == 0) {
 					System.out.println("-->");
